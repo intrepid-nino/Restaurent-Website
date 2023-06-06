@@ -21,5 +21,63 @@ html {
 body {
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+    overflow-x: hidden; 
+    /*overflow-x specifies what to do with the left/right edges of the content.
+    overflow-y specifies what to do with the top/bottom edges of the content.*/
+}
+
+/* Navigation bar */
+.topnav{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;  
+}
+
+
+
+.topnav .li{
+    color: rgb(0, 0, 0);
+    font-family: 'Questrial', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 0px 12px 0px 12px;
+    padding: 18px 16px;
+    text-decoration: none;
+    transition: .5s;
+    
+}
+
+.topnav .li:hover{
+    transition: .5s;
+    -webkit-transition: .5s;
+    color: white;
+    background-color: rgb(42, 42, 42);
+}
+
+/* Button in Navigation bar */
+.nav-button{
+    display: inline-block;
+    margin: auto 9px auto 9px;
+}
+
+.nav-button .btn{
+    font-family: 'Questrial', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 12px 14px;
+    border: 2px solid black;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.btn:hover{
+    color: white;
+    border: 2px solid white;
+    background-color: rgb(42, 42, 42);
 }
